@@ -16,7 +16,7 @@ A list of technologies used within the project:
 * [Sails.js](https://sailsjs.com/get-started): Version 1.4.2 
 * [Node.js](https://nodejs.org/en/): Version 15.10.0
 * [MongoDB](https://www.mongodb.com/try/download/community): Version 4.9
-* 
+
 ## Installation
 ***
 Prerequites: ```Node.js``` and ```MongoDb``` installed
