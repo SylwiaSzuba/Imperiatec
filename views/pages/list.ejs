@@ -1,0 +1,24 @@
+<h1 class="display-4">Arrivée</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% data.forEach(function(arrivee){ %>
+            <tr>
+                <td><%= arrivee.id %></td>
+                <td><%= arrivee.nom %></td>
+                <td>
+                    <a href="/arrivee/edit/<%= arrivee.id %>" class="btn btn-primary">Edit</a>
+                    <form class="d-inline" action="arrivee/delete/<% arrivee.id %>" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger">
+                    </form>
+                </td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
